@@ -9,7 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
+    @IBAction func Card(_ sender: UIButton) {
+    }
+    
     @IBAction func tapToFlipCard(_ sender: UIButton) {
 
         flipCard(withEmoji: "👻", on: sender)
