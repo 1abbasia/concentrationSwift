@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     var emoji = "👻"
     
     
+    @IBAction func resetFlipsButton(_ sender: UIButton) {
+        flipCount = 0
+    }
     @IBOutlet weak var flipCountLabel: UILabel!
     
     @IBAction func flipFirstCard(_ sender: UIButton!) {
