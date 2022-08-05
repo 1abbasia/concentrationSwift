@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     var emoji = "👻"
     
     
+    @IBOutlet var emojiCollectionArray: [UIButton]!
+    
     @IBAction func resetFlipsButton(_ sender: UIButton) {
         flipCount = 0
     }
@@ -24,6 +26,8 @@ class ViewController: UIViewController {
     @IBAction func flipFirstCard(_ sender: UIButton!) {
         flipCard(withEmoji: "👻", on: sender)
         flipCount += 1
+        if let cardNumber = emojiCollectionArray.firstIndex(of: sender) {
+            print(cardNumber)}
     }
         
     
@@ -31,6 +35,9 @@ class ViewController: UIViewController {
     @IBAction func flipSecondCard(_ sender: UIButton!) {
         flipCard(withEmoji: "👻", on: sender)
         flipCount += 1
+        if let cardNumber = emojiCollectionArray.firstIndex(of: sender){
+            print(cardNumber)
+        }
     }
     
     
